@@ -20,4 +20,4 @@ __Note:__ The instructions are in Portuguese.
 
 ### 2. Instructions folder to compile, run and test the code
 
-To help the participants, the repository also contains a `program` directory with the source code of a basic program in each programming language (C, C++, Python and Java) and a `README.md` file with instructions on how to compile, run and test the program for each language.
+To help the participants, the repository also contains a `programs` directory with the source code of a basic program in each programming language (C, C++, Python and Java) and a `README.md` file with instructions on how to compile, run and test the program for each language.

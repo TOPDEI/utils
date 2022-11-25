@@ -8,6 +8,7 @@ The instructions are divided into three parts:
 1. Compiling the program
 2. Run the program
 3. Run the program with tests
+4. Script to compile, run and test the program
 
 ## Requirements
 
@@ -165,4 +166,27 @@ python3 <source_file> < input.txt > output.txt
 
 ```bash
 java -Xmx256M -Xss256M -classpath . <output_file> < input.txt > output.txt
+```
+
+---
+## 4. Script to compile, run and test the program
+
+In this folder there is also a script called `run.sh` that can be used to compile, run and test the program using the instructions presented in the following sections. The script can be used as follows:
+
+```bash
+./run.sh <code> <input>
+```
+
+where `<code>` is the name of the file with the source code and `<input>` is the name of the file with the input to the program.
+
+For example, if you want to run the program with the source code `main.cpp` and the input data `input.txt`, you must run the following command:
+
+```bash
+./run.sh main.cpp input.txt
+```
+
+**Note**: To run the script, you must have the permissions to execute it. If you don't have the permissions, you can run the following command:
+
+```bash
+chmod +x run.sh
 ```
