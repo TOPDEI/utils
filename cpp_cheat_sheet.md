@@ -821,6 +821,50 @@ The following operations can be performed on sets:
 | empty() | Checks if the set is empty | O(1) |
 | size() | Returns the number of elements in the set | O(1) |
 
+### Multisets
+
+A multiset is a container that stores multiple elements in a sorted manner. The difference between a set and a multiset is that a set stores unique elements, whereas a multiset stores multiple elements.
+
+The following program creates a multiset:
+
+```cpp
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main()
+{
+    multiset<int> s;
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(40);
+    s.insert(50);
+    s.insert(10);
+    s.insert(20);
+    s.insert(30);
+    s.insert(40);
+    s.insert(50);
+
+    for (auto it = s.begin(); it != s.end(); it++)
+        cout << *it << " "; // 10 10 20 20 30 30 40 40 50 50
+
+    return 0;
+}
+```
+
+#### Multiset Operations
+
+The following operations can be performed on multisets:
+
+| Operation | Description | Complexity |
+| --- | --- | --- |
+| insert() | Inserts a new element in the multiset | O(log n) |
+| erase() | Removes an element from the multiset | O(log n) |
+| find() | Returns an iterator to the element if it is found, otherwise returns an iterator to the end of the multiset | O(log n) |
+| empty() | Checks if the multiset is empty | O(1) |
+| size() | Returns the number of elements in the multiset | O(1) |
+
 ### Maps
 
 A map is a container that stores elements in a key-value manner. The following program creates a map:
@@ -858,6 +902,52 @@ The following operations can be performed on maps:
 | find() | Returns an iterator to the element if it is found, otherwise returns an iterator to the end of the map | O(log n) |
 | empty() | Checks if the map is empty | O(1) |
 | size() | Returns the number of elements in the map | O(1) |
+
+### Multimaps
+
+A multimap is a container that stores multiple elements in a key-value manner. The difference between a map and a multimap is that a map stores unique elements, whereas a multimap stores multiple elements.
+
+The following program creates a multimap:
+
+```cpp
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main()
+{
+    multimap<int, string> m;
+    m.insert({1, "Hello"});
+    m.insert({2, "World"});
+    m.insert({3, "!"});
+    m.insert({1, "Hello"});
+    m.insert({2, "World"});
+    m.insert({3, "!"});
+
+    for (auto it = m.begin(); it != m.end(); it++)
+        cout << it->first << " " << it->second << endl;
+    // 1 Hello
+    // 1 Hello
+    // 2 World
+    // 2 World
+    // 3 !
+    // 3 !
+
+    return 0;
+}
+```
+
+#### Multimap Operations
+
+The following operations can be performed on multimaps:
+
+| Operation | Description | Complexity |
+| --- | --- | --- |
+| insert() | Inserts a new element in the multimap | O(log n) |
+| erase() | Removes an element from the multimap | O(log n) |
+| find() | Returns an iterator to the element if it is found, otherwise returns an iterator to the end of the multimap | O(log n) |
+| empty() | Checks if the multimap is empty | O(1) |
+| size() | Returns the number of elements in the multimap | O(1) |
 
 -----------------
 
