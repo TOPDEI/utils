@@ -1,15 +1,10 @@
-<style>
-  .right-aligned {
-    float: right;
-    text-align: right;
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 # C++ Cheat Sheet
 
 ### [Table of Contents](#table-of-contents)
 - [Compiling and Executing C++](#compiling-and-executing-c++)
-- [C++ Basics](#c-basics)
+- [C++ Basics](#c++-basics)
   - [Variables](#variables)
   - [Input/Output](#inputoutput)
   - [Conditionals](#conditionals)
@@ -41,8 +36,7 @@
 - [C++ Documentation](#c-documentation)
 
 ----------------
-
-## <h2 id="compiling-and-executing-c++"> Compiling and Executing C++ <a class="right-aligned" href="#table-of-contents">↩ TOC</a></h2>
+## <h2 id="compiling-and-executing-c++"> <a class="right-aligned" href="#table-of-contents">↩</a> Compiling and Executing C++</h2>
 
 To compile and execute a C++ program, you need to use a compiler. A compiler is a program that translates C++ source code into machine language. The machine language is then executed by the computer. There are many compilers available for C++, including GCC, Clang, and Microsoft Visual C++. In this tutorial, we will use GCC, which is the GNU Compiler Collection. GCC is a free and open-source compiler that is available for Windows, Mac, and Linux.
 
@@ -78,7 +72,7 @@ To use a file as both input and output, you can use the following command:
 
 ----------------
 
-##  <h2 id="c-basics"> C++ Basics <a class="right-aligned" href="#table-of-contents">↩ TOC</a></h2>
+## <h2 id="c++-basics"> <a class="right-aligned" href="#table-of-contents">↩</a> C++ Basics</h2>
 
 ### Variables
 
@@ -652,7 +646,7 @@ int main()
 
 -----------------
 
-## <h2 id="c++-advanced-structures"> C++ Advanced Structures <a class="right-aligned" href="#table-of-contents">↩ TOC</a></h2>
+## <h2 id="c++-advanced-structures"> <a class="right-aligned" href="#table-of-contents">↩</a> C++ Advanced Structures</h2>
 
 ### Queues
 
@@ -686,14 +680,14 @@ int main()
 
 The following operations can be performed on queues:
 
-| Operation | Description |
-| --- | --- |
-| push() | Inserts a new element at the end of the queue |
-| pop() | Removes the first element of the queue |
-| front() | Returns the first element of the queue |
-| back() | Returns the last element of the queue |
-| empty() | Checks if the queue is empty |
-| size() | Returns the number of elements in the queue |
+| Operation | Description | Complexity |
+| --- | --- | --- |
+| push() | Inserts a new element at the end of the queue | O(1) |
+| pop() | Removes the first element of the queue | O(1) |
+| front() | Returns the first element of the queue | O(1) |
+| back() | Returns the last element of the queue | O(1) |
+| empty() | Checks if the queue is empty | O(1) |
+| size() | Returns the number of elements in the queue | O(1) |
 
 ### Stacks
 
@@ -726,13 +720,13 @@ int main()
 
 The following operations can be performed on stacks:
 
-| Operation | Description |
-| --- | --- |
-| push() | Inserts a new element at the top of the stack |
-| pop() | Removes the top element of the stack |
-| top() | Returns the top element of the stack |
-| empty() | Checks if the stack is empty |
-| size() | Returns the number of elements in the stack |
+| Operation | Description | Complexity |
+| --- | --- | --- |
+| push() | Inserts a new element at the top of the stack | O(1) |
+| pop() | Removes the top element of the stack | O(1) |
+| top() | Returns the top element of the stack | O(1) |
+| empty() | Checks if the stack is empty | O(1) |
+| size() | Returns the number of elements in the stack | O(1) |
 
 ### Priority Queues
 
@@ -788,7 +782,7 @@ int main()
 }
 ```
 
-Note: The operations that can be performed on priority queues are the same as those that can be performed on queues.
+Note: The operations that can be performed on priority queues are the same as those that can be performed on queues. However, the complexity of the operations is different. The complexity of the operations on priority queues is O(log n).
 
 ### Sets
 
@@ -819,13 +813,13 @@ int main()
 
 The following operations can be performed on sets:
 
-| Operation | Description |
-| --- | --- |
-| insert() | Inserts a new element in the set |
-| erase() | Removes an element from the set |
-| find() | Returns an iterator to the element if it is found, otherwise returns an iterator to end |
-| empty() | Checks if the set is empty |
-| size() | Returns the number of elements in the set |
+| Operation | Description | Complexity |
+| --- | --- | --- |
+| insert() | Inserts a new element in the set | O(log n) |
+| erase() | Removes an element from the set | O(log n) |
+| find() | Returns an iterator to the element if it is found, otherwise returns an iterator to the end of the set | O(log n) |
+| empty() | Checks if the set is empty | O(1) |
+| size() | Returns the number of elements in the set | O(1) |
 
 ### Maps
 
@@ -857,19 +851,21 @@ int main()
 
 The following operations can be performed on maps:
 
-| Operation | Description |
-| --- | --- |
-| insert() | Inserts a new element in the map |
-| erase() | Removes an element from the map |
-| find() | Returns an iterator to the element if it is found, otherwise returns an iterator to end |
-| empty() | Checks if the map is empty |
-| size() | Returns the number of elements in the map |
+| Operation | Description | Complexity |
+| --- | --- | --- |
+| insert() | Inserts a new element in the map | O(log n) |
+| erase() | Removes an element from the map | O(log n) |
+| find() | Returns an iterator to the element if it is found, otherwise returns an iterator to the end of the map | O(log n) |
+| empty() | Checks if the map is empty | O(1) |
+| size() | Returns the number of elements in the map | O(1) |
 
 -----------------
 
-## <h2 id="c++-standard-library-algorithms">C++ Standard Library Algorithms <a class="right-aligned" href="#table-of-contents">↩ TOC</a></h2>
+## <h2 id="c++-standard-library-algorithms"> <a class="right-aligned" href="#table-of-contents">↩</a> C++ Standard Library Algorithms</h2>
 
 ### Sorting
+
+Complexity: O(n log n)
 
 The following program sorts the elements of a vector:
 
@@ -890,6 +886,8 @@ int main()
 ```
 
 ### Searching
+
+Complexity: O(log n)
 
 The following program searches for an element in a vector:
 
@@ -913,6 +911,8 @@ int main()
 
 ### Counting
 
+Complexity: O(n)
+
 The following program counts the number of occurrences of an element in a vector:
 
 ```cpp
@@ -930,6 +930,8 @@ int main()
 ```
 
 ### Reversing
+
+Complexity: O(n)
 
 The following program reverses the elements of a vector:
 
@@ -951,6 +953,8 @@ int main()
 
 ### Removing
 
+Complexity: O(n)
+
 The following program removes an element from a vector:
 
 ```cpp
@@ -971,6 +975,8 @@ int main()
 
 ### Minimum and Maximum
 
+Complexity: O(n)
+
 The following program finds the minimum and maximum elements of a vector:
 
 ```cpp
@@ -989,6 +995,8 @@ int main()
 ```
 
 ### Lower and Upper Bounds
+
+Complexity: O(log n)
 
 The lower bound of an element is the first element that is not less than the given element.
 
@@ -1017,6 +1025,8 @@ int main()
 
 ### Binary Search
 
+Complexity: O(log n)
+
 Binary search is a search algorithm that finds the position of a target value within a sorted array.
 
 The following program performs binary search on a vector:
@@ -1040,7 +1050,7 @@ int main()
 
 -----------------
 
-## <h2 id="c++-basic-programs">C++ Basic Programs <a class="right-aligned" href="#table-of-contents">↩ TOC</a></h2>
+## <h2 id="c++-basic-programs"> <a class="right-aligned" href="#table-of-contents">↩</a> C++ Basic Programs</h2>
 
 ### Hello World
 
@@ -1136,7 +1146,7 @@ int main()
 
 -----------------
 
-## <h2 id="big-o-notation">Big O Notation <a class="right-aligned" href="#table-of-contents">↩ TOC</a></h2>
+## <h2 id="big-o-notation"> <a class="right-aligned" href="#table-of-contents">↩</a> Big O Notation</h2>
 
 Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. In computer science, Big O notation is used to classify algorithms according to how their run time or space requirements grow as the input size grows. Big O notation is also used to classify data structures according to their performance.
 
