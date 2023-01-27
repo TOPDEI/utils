@@ -21,3 +21,9 @@ __Note:__ The instructions are in Portuguese.
 ### 2. Instructions folder to compile, run and test the code
 
 To help the participants, the repository also contains a `programs` directory with the source code of a basic program in each programming language (C, C++, Python and Java) and a `README.md` file with instructions on how to compile, run and test the program for each language.
+
+### 3. C++ Cheat Sheet
+
+The repository also contains a `cpp_cheat_sheet.md` file with a summary of the most important C++ concepts, such as the STL, the syntax and the most important functions.
+
+---
