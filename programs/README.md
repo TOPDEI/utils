@@ -16,6 +16,39 @@ The instructions are divided into three parts:
 * Python 3.7.9 (or higher) and pypy3 3.7.9 (or higher)
 * Java 11 (or higher): OpenJDK 11.0.13 compiler
 
+For Windows, you can use the following tools:
+
+* Windows Subsystem for Linux (WSL) (https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview) and then install the tools mentioned above execute the following commands:
+
+```bash
+sudo apt update
+sudo apt install build-essential
+sudo apt install openjdk-11-jdk
+sudo apt install pypy3
+```
+
+* Visual Studio Code
+  * C/C++ (https://code.visualstudio.com/docs/languages/cpp)
+  * Java (https://code.visualstudio.com/docs/languages/java)
+  * Python (https://code.visualstudio.com/docs/languages/python)
+
+For Mac OS X, you can use the following tools:
+
+* Xcode (https://developer.apple.com/xcode/)
+* Visual Studio Code (https://code.visualstudio.com/docs/languages/cpp)
+
+For Linux, you can use the following tools:
+
+* Visual Studio Code (https://code.visualstudio.com/docs/languages/cpp)
+
+To verify the version of the compiler, run the following command:
+
+```bash
+g++ --version
+```
+
+__Note:__ If you want to use another compiler, you must make sure that it supports the C++17 standard.
+
 ---
 
 
